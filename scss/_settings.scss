@@ -25,10 +25,52 @@ a {
     line-height: 21px;
     text-transform: uppercase;
     background: #5A0D67;
-    padding: 15px 55px;
+    border: 1px solid #5A0D67;
+    color: #fff;
+    padding: 14px 55px;
     transition: all 0.5s;
     &:hover {
         color: #5A0D67;
         background-color: #fff;
+    }
+    &--decor {
+        position: relative;
+        margin-top: -7px;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #C4C4C4;
+            width: 80px;
+            height: 2px;
+            top: 24px;
+            right: -65px;
+        }
+        &::after {
+            content: 'ЖМИ';
+            position: absolute;
+            font-size: 14px;
+            line-height: 21px;
+            color: #C4C4C4;
+            margin-left: 130px;
+        }
+    }
+}
+.title {
+    position: relative;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #21062A; 
+    margin-bottom: 50px;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 80px;
+        top: 25px;
+        margin-left: 20px;
+        background-color: #21062A;
+
     }
 }
