@@ -1,0 +1,54 @@
+.header {
+    background: url('../images/header-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 700px;
+    color: #fff;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 47px 0 45px;
+    }
+    &__content {
+        position: relative;
+        padding: 60px 0 0; 
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 107px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 53px;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+    }
+    &__text {
+        margin: 0 0 30px;
+        max-width: 800px;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        padding: 70px 0 20px 65px;
+        &-link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: -270px;
+    }
+}
+.phone {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+}
