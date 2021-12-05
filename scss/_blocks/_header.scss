@@ -32,14 +32,7 @@
         max-width: 800px;
     }
     &__social {
-        display: flex;
-        align-items: center;
-        padding: 70px 0 20px 65px;
-        &-link {
-            &:not(:last-child) {
-                margin-right: 10px;
-            }
-        }
+        padding: 70px 0 20px 70px;
     }
     &__image {
         position: absolute;
